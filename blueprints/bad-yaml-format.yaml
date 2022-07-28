@@ -10,7 +10,7 @@ outputs:
 
 
 grains:
-bucket_1:
+  bucket_1:
     kind: terraform
     spec: 
       source:
