@@ -15,8 +15,8 @@ grains:
     asaf:
         this_is_wrong: whoops
     spec:
-      sources:
-        path: https://github.com/bitnami/charts.git//bitnami/nginx
+      source:
+        paths: https://github.com/bitnami/charts.git//bitnami/nginx
       host:
         name: '{{.inputs.host}}'
       commands:
