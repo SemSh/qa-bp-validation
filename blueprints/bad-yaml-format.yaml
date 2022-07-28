@@ -2,15 +2,8 @@ spec_version: 2
 description: Simple s3 buckets provisioning
 
 
-outputs:
-  bucket_1:
-    value: '{{ .grains.bucket_1.outputs.s3_bucket_arn }}'
-  bucket_2:
-    value: '{{ .grains.bucket_2.outputs.s3_bucket_arn }}'
-
-
 grains:
-  bucket_1:
+    bucket_1:
     kind: terraform
     spec: 
       source:
