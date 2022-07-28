@@ -12,6 +12,8 @@ grains:
 
   nginx:
     kind: helm
+    asaf:
+        this_is_wrong: whoops
     spec:
       source:
         path: https://github.com/bitnami/charts.git//bitnami/nginx
@@ -19,5 +21,4 @@ grains:
         name: '{{.inputs.host}}'
       commands:
         - dep up bitnami/nginx
-      asaf:
-        this_is_wrong: whoops
+      
