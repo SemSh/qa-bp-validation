@@ -11,7 +11,7 @@ outputs:
 
 grains:
   bucket_1:
-    kind:
+    kind: wdw
     spec: 
       source:
         path: https://github.com/QualiNext/qa-blueprint-validation/tree/master/terraform
