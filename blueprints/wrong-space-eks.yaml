@@ -16,6 +16,6 @@ grains:
       source:
         path: https://github.com/bitnami/charts.git//bitnami/nginx
       host:
-        name: eks2
+        name: eks-asaf
       commands:
         - dep up bitnami/nginx
