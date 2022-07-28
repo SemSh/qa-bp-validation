@@ -19,6 +19,5 @@ grains:
         name: '{{.inputs.host}}'
       commands:
         - dep up bitnami/nginx
-
-asaf:
-  this_is_wrong: whoops
+      asaf:
+        this_is_wrong: whoops
