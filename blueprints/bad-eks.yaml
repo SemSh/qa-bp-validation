@@ -11,12 +11,12 @@ outputs:
 
 grains:
   bucket_1:
-    kind: /#
+    kind: terraform
     spec: 
       source:
         path: https://github.com/QualiNext/qa-blueprint-validation/tree/master/terraform
       host:
-        name: wrong_eks
+        name: wrong eks
       inputs:
         - region: us-west-1
         - acl: private
