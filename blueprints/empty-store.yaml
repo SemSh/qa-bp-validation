@@ -38,7 +38,7 @@ grains:
     kind: terraform
     spec: 
       source:
-        store: '{{.inputs.store}}'
+        store: qa-assets2
       host:
         name: '{{.inputs.host}}'
       inputs:
