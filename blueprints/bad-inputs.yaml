@@ -20,4 +20,4 @@ grains:
       source:
         path: github.com/johnathanvidu/torque-samples.git//terraform/simple-tf-module
       host:
-        name: '{{.inputs.computer}}'
+        name: '{{.inputs.compute}}'
