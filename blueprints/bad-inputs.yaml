@@ -16,7 +16,6 @@ inputs:
 outputs:
   link:
     value: '{{.inputs.test}}'
-    kind: link
 
 grains:
   simple:
