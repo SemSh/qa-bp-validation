@@ -10,7 +10,7 @@ inputs:
   test:
     type: string
     display-style: normal
-    default: "eks"
+    default: ""
     description: "test"
 
 outputs:
@@ -22,8 +22,10 @@ grains:
     kind: terraform
     spec:
       source:
-        path: github.com/johnathanvidu/torque-samples.git//terraform/simple-tf-module
+        store: qa-bp-assets
       host:
         name: '{{.inputs.compute}}'
       inputs:
         - test: '{{.inputs.test}}'
+      outputs:
+        - test
