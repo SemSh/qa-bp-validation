@@ -16,7 +16,7 @@ grains:
       source:
         path: https://github.com/QualiNext/qa-blueprint-validation/tree/master/terraform
       host:
-        name: wrong eks
+        name: bpValidation-eks
       inputs:
         - region: us-west-1
         - acl: private
