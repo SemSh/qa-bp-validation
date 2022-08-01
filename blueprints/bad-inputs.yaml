@@ -22,7 +22,7 @@ grains:
     kind: terraform
     spec:
       source:
-        path: https://github.com/QualiNext/qa-bp-validation/tree/master/terraform
+        path: https://github.com/QualiNext/qa-bp-validation.git//terraform
       host:
         name: '{{.inputs.compute}}'
       inputs:
