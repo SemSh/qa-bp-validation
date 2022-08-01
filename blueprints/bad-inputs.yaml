@@ -14,8 +14,8 @@ inputs:
     description: "test"
 
 outputs:
-  link:
-    value: '{{.inputs.test}}'
+  output:
+    value: '{{.grains.simple.spec.outputs.test}}'
 
 grains:
   simple:
@@ -25,3 +25,7 @@ grains:
         path: github.com/johnathanvidu/torque-samples.git//terraform/simple-tf-module
       host:
         name: '{{.inputs.compute}}'
+      inputs:
+        - test: '{{.inputs.test}}'
+      outputs:
+        - test
