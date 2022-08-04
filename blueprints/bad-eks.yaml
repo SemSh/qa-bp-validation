@@ -2,6 +2,13 @@ spec_version: 2
 description: Simple s3 buckets provisioning
 
 
+inputs:
+  compute:
+    type: string
+    display-style: normal
+    default: "eks"
+    description: "compute service"
+
 outputs:
   bucket_1:
     value: '{{ .grains.bucket_12.outputs.s3_bucket_arn }}'
@@ -16,7 +23,7 @@ grains:
       source:
         path: https://github.com/QualiNext/qa-blueprint-validation/tree/master/terraform
       host:
-        name: bpValidation-eks
+        name: '{{.inputs.compute}}'
       inputs:
         - region: us-west-1
         - acl: private
