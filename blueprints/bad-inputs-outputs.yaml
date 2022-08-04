@@ -7,11 +7,6 @@ inputs:
     display-style: normal
     default: "eks"
     description: "compute service"
-  test:
-    type: string
-    display-style: normal
-    default: ""
-    description: "test"
 
 outputs:
   output:
