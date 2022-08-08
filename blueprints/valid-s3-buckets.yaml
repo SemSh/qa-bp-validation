@@ -16,7 +16,7 @@ grains:
       source:
         path: https://github.com/QualiNext/qa-blueprint-validation/tree/master/terraform
       host:
-        name: eksgmp
+        name: qa-eks
       inputs:
         - region: us-west-1
         - acl: private
@@ -30,7 +30,7 @@ grains:
       source:
         path: https://github.com/QualiNext/qa-blueprint-validation/tree/master/terraform
       host:
-        name: eksgmp
+        name: qa-eks
       inputs:
         - region: us-east-1
         - acl: private
