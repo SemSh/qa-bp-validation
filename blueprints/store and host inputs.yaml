@@ -23,9 +23,9 @@ grains:
     kind: terraform
     spec: 
       source:
-        store: qa-assets  #'{{.inputs.store}}'
+        store: '{{.inputs.store}}'
       host:
-        name: bpValidation-eks #'{{.inputs.host}}'
+        name: '{{.inputs.host}}'
       inputs:
         - region: us-west-1
         - acl: private
