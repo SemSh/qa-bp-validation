@@ -12,7 +12,8 @@ grains:
     kind: terraform
     spec: 
       source:
-        store: qa-assets2/terraform/s3
+        store: qa-assets2
+        path: terraform/s3
       host:
         name: eks-asaf
       inputs:
