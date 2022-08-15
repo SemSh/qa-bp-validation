@@ -15,7 +15,7 @@ grains:
     spec: 
       source:
         store: qa-bp-assets
-        path: terraform
+        path: s3
       host:
         name: eks-asaf
       inputs:
