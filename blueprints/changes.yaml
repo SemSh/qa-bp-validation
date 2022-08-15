@@ -5,6 +5,8 @@ description: Simple s3 buckets provisioning
 outputs:
   bucket_1:
     value: '{{ .grains.bucket_1.outputs.s3_bucket_arn }}'
+  test:
+    va;ie: '{{ .grains.bucket_1.outputs.test }}'
 
 
 grains:
@@ -21,3 +23,4 @@ grains:
         - name: 'asaf-test-bucket-1-s3-{{ sandboxid | downcase }}'
       outputs:
         - s3_bucket_arn
+        - test
