@@ -12,13 +12,13 @@ grains:
     kind: terraform
     spec: 
       source:
-        store: qa-assets2
-        path: terraform/s3
+        store: qa-bp-assets
+        path: terraform
       host:
         name: eks-asaf
       inputs:
         - region: us-west-1
         - acl: private
-        - name: 'test-bucket-1-s3-{{ sandboxid | downcase }}'
+        - name: 'asaf-test-bucket-1-s3-{{ sandboxid | downcase }}'
       outputs:
         - s3_bucket_arn
