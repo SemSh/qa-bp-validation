@@ -6,7 +6,7 @@ outputs:
   bucket_1:
     value: '{{ .grains.bucket_1.outputs.s3_bucket_arn }}'
   test:
-    va;ie: '{{ .grains.bucket_1.outputs.test }}'
+    value: '{{ .grains.bucket_1.outputs.test }}'
 
 
 grains:
