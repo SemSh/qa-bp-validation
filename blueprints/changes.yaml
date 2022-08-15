@@ -17,7 +17,6 @@ grains:
       host:
         name: eks-asaf
       inputs:
-        - region: us-west-1
         - acl: private
         - name: 'asaf-test-bucket-1-s3-{{ sandboxid | downcase }}'
       outputs:
