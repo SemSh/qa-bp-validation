@@ -15,7 +15,7 @@ grains:
     spec: 
       source:
         store: torque-assets
-        path: s3
+        path: asaf
       host:
         name: eks-asaf3
       inputs:
