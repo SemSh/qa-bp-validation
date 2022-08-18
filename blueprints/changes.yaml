@@ -14,8 +14,8 @@ grains:
     kind: terraform
     spec: 
       source:
-        store: torque-assets
-        path: s3
+        store: asaf-assets
+        path: test
       host:
         name: eks-asaf3
       inputs:
