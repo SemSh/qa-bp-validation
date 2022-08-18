@@ -17,7 +17,7 @@ grains:
         store: qa-bp-assets
         path: s3
       host:
-        name: eks-asaf
+        name: eks-asaf3
       inputs:
         - acl: private
         - name: 'asaf-test-bucket-1-s3-{{ sandboxid | downcase }}'
