@@ -3,10 +3,6 @@ description: Simple s3 buckets provisioning
 
 
 inputs:
-  store:
-    type: string
-    display-style: normal
-    description: "compute service"
   host:
     type: string
     display-style: normal
@@ -23,7 +19,7 @@ grains:
     kind: terraform
     spec: 
       source:
-        store: '{{.inputs.store}}'
+        store: https://github.com/QualiNext/qa-blueprint-validation/tree/master/terraform
       host:
         name: '{{.inputs.host}}'
       inputs:
