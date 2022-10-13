@@ -16,7 +16,7 @@ grains:
       source:
         path: https://github.com/QualiNext/qa-blueprint-validation.git//terraform
       host:
-        name: bp-validation
+        name: bp-validation2
       inputs:
         - region: us-west-1
         - acl: private
@@ -30,7 +30,7 @@ grains:
       source:
         path: https://github.com/QualiNext/qa-blueprint-validation.git//terraform
       host:
-        name: bp-validation
+        name: bp-validation2
       inputs:
         - region: us-west-1
         - acl: private
